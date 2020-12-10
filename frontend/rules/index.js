@@ -30,14 +30,14 @@ export const roleRules = (msg) => {
 export const projectNameRules = (msg) => {
   return [
     v => !!v || msg.projectNameRequired,
-    v => (v && v.length <= 30) || msg.projectNameLessThan30Chars
+    v => (v && v.length <= 100) || msg.projectNameLessThan100Chars
   ]
 }
 
 export const descriptionRules = (msg) => {
   return [
     v => !!v || msg.descriptionRequired,
-    v => (v && v.length <= 100) || msg.descriptionLessThan30Chars
+    v => (v && v.length <= 200) || msg.descriptionLessThan200Chars
   ]
 }
 
@@ -57,7 +57,7 @@ export const fileFormatRules = (msg) => {
 export const uploadFileRules = (msg) => {
   return [
     v => !!v || msg.fileRequired,
-    v => !v || v.size < 1000000 || msg.fileLessThan1MB
+    v => !v || v.size < 10000000 || msg.fileLessThan10MB
   ]
 }
 
@@ -65,6 +65,6 @@ export const uploadFileRules = (msg) => {
 export const passwordRules = (msg) => {
   return [
     v => !!v || msg.passwordRequired,
-    v => (v && v.length <= 30) || msg.passwordLessThan30Chars
+    v => (v && v.length <= 100) || msg.passwordLessThan100Chars
   ]
 }

@@ -15,11 +15,11 @@ export default {
   },
   projectNameRules: {
     projectNameRequired: 'Project name is required',
-    projectNameLessThan30Chars: 'Project name must be less than 30 characters'
+    projectNameLessThan100Chars: 'Project name must be less than 100 characters'
   },
   descriptionRules: {
     descriptionRequired: 'Description is required',
-    descriptionLessThan30Chars: 'Description must be less than 100 characters'
+    descriptionLessThan200Chars: 'Description must be less than 200 characters'
   },
   projectTypeRules: {
     projectTypeRequired: 'Project type is required'
@@ -29,10 +29,10 @@ export default {
   },
   uploadFileRules: {
     fileRequired: 'File is required',
-    fileLessThan1MB: 'File size should be less than 1 MB!'
+    fileLessThan10MB: 'File size should be less than 10 MB!'
   },
   passwordRules: {
     passwordRequired: 'Password is required',
-    passwordLessThan30Chars: 'Password must be less than 30 characters'
+    passwordLessThan100Chars: 'Password must be less than 100 characters'
   }
 }

@@ -34,7 +34,7 @@ services:
       - www:/var/www/html:ro
       - static_volume:/static
     ports:
-      - 80:80
+      - 8080:80
     depends_on:
       - backend
     networks:
